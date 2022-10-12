@@ -1,4 +1,5 @@
 //https://github.com/aaronlidman/Toner-for-Tilemill/tree/master/toner4tilemill/fonts
+//https://www.devlinpeck.com/content/jspdf-custom-font
 import { IInputs, IOutputs } from "./generated/ManifestTypes";
 //import * as jsPDF from 'jspdf'
 import * as jsPDF from 'jspdf/dist/jspdf.debug.js'
