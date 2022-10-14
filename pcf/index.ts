@@ -70,8 +70,9 @@ export class pcf implements ComponentFramework.StandardControl<IInputs, IOutputs
 
 
 				doc.addFileToVFS('arialuni-normal.ttf', fontbase64.arialuni);
+				doc.addFileToVFS('arialuni-bold.ttf', fontbase64.arialunibold);
 				doc.addFont('arialuni-normal.ttf', 'arialuni', 'normal');
-				doc.addFont('arialuni-normal.ttf', 'arialuni', 'bold');
+				doc.addFont('arialuni-bold.ttf', 'arialuni', 'bold');
 
 
 				//doc.setFont("amiri");
@@ -110,7 +111,7 @@ export class pcf implements ComponentFramework.StandardControl<IInputs, IOutputs
 			}
 			</style>
 			<body>
-			
+			<p>this is Regular Font This is String</p>
 			<h4 style="font-family:arialuni">&iexcl; Html Header ♠•♦♣■☆✔❥</h4><br>
 			<p> &iexcl; Analysis by Country ♠•♦♣■☆✔❥</p>
 			<table id='test_jspdf_auto'>
@@ -139,7 +140,7 @@ export class pcf implements ComponentFramework.StandardControl<IInputs, IOutputs
 			   </br>
   	 		 ■ Milk </br> 
 				</br>
- 
+			<p>this is Regular Font This is String</p>
 			</body>
 			</html>
 			 `;
@@ -165,7 +166,7 @@ export class pcf implements ComponentFramework.StandardControl<IInputs, IOutputs
 						outputPdf: doc
 					};
 					doc.setFont("arialuni");
-					doc.fromHTML(ele, 10, 75, opt, function () {
+					doc.fromHTML(ele, 10, 20, opt, function () {
 						var columns = ["ID", "Name", "Country"];
 var rows = [
     [1, "Shaw", "Tanzania"],
